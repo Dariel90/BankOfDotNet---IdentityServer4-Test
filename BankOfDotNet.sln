@@ -1,0 +1,31 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 16
+VisualStudioVersion = 16.0.29806.167
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BankOfDotNet.API", "BankOfDotNet.API\BankOfDotNet.API.csproj", "{C587BF87-0FF4-4245-91F5-4CE83722FB2A}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BankOfDotNet.IdentitySvr", "BankOfDotNet.IdentitySvr\BankOfDotNet.IdentitySvr.csproj", "{43D83283-155A-40B8-B8E9-6A1A54B43874}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{C587BF87-0FF4-4245-91F5-4CE83722FB2A}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{C587BF87-0FF4-4245-91F5-4CE83722FB2A}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{C587BF87-0FF4-4245-91F5-4CE83722FB2A}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{C587BF87-0FF4-4245-91F5-4CE83722FB2A}.Release|Any CPU.Build.0 = Release|Any CPU
+		{43D83283-155A-40B8-B8E9-6A1A54B43874}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{43D83283-155A-40B8-B8E9-6A1A54B43874}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{43D83283-155A-40B8-B8E9-6A1A54B43874}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{43D83283-155A-40B8-B8E9-6A1A54B43874}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {00F1E7BA-ED5C-4F9B-AFA4-21BCFEABCBA1}
+	EndGlobalSection
+EndGlobal
