@@ -27,8 +27,35 @@ namespace BankOfDotNet.ConsoleClient
             try
             {
                 //Discover all endpoint using metadata og identity sever
-                var client = new HttpClient();
                 var apiUri = "http://localhost:5000";
+
+                var discoRO = await _client.GetDiscoveryDocumentAsync(apiUri);
+                if (discoRO.IsError)
+                {
+                    Console.WriteLine(discoRO.Error);
+                    return;
+                }
+
+                //Grab a bearer token using ResourceOwner Grant Type
+                var tokenResponseRO = await _client.RequestPasswordTokenAsync(new PasswordTokenRequest
+                {
+                    Address = discoRO.TokenEndpoint,
+                    ClientId = "ro.client",
+                    ClientSecret = "secret",
+                    UserName = "daniela",
+                    Password = "daniela"
+                });
+
+                if (tokenResponseRO.IsError)
+                {
+                    Console.WriteLine(tokenResponseRO.Error);
+                    return;
+                }
+
+                Console.WriteLine(tokenResponseRO.Json);
+                Console.WriteLine("\n\n");
+
+
                 var disco = await _client.GetDiscoveryDocumentAsync(apiUri);
                 if (disco.IsError)
                 {
@@ -36,8 +63,8 @@ namespace BankOfDotNet.ConsoleClient
                     return;
                 }
 
-                //Grab a bearer token
-                var tokenResponse = await client.RequestClientCredentialsTokenAsync(new ClientCredentialsTokenRequest
+                //Grab a bearer token using Client Credential Flow Grant Type
+                var tokenResponse = await _client.RequestClientCredentialsTokenAsync(new ClientCredentialsTokenRequest
                 {
                     Address = disco.TokenEndpoint,
                     ClientId = "client",

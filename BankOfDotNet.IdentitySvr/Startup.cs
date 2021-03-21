@@ -23,7 +23,7 @@ namespace BankOfDotNet.IdentitySvr
                 ///.AddInMemoryIdentityResources(Config.GetIdentityResources())
                 .AddInMemoryApiResources(Config.GetAllApiResources())
                 .AddInMemoryApiScopes(Config.GetApiScopes())
-                //.AddTestUsers(new List<TestUser>())
+                .AddTestUsers(Config.GetUsers())
                 .AddDeveloperSigningCredential();
         }
 
