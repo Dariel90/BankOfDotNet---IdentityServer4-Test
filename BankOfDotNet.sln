@@ -3,11 +3,13 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 16
 VisualStudioVersion = 16.0.29806.167
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BankOfDotNet.API", "BankOfDotNet.API\BankOfDotNet.API.csproj", "{C587BF87-0FF4-4245-91F5-4CE83722FB2A}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "BankOfDotNet.API", "BankOfDotNet.API\BankOfDotNet.API.csproj", "{C587BF87-0FF4-4245-91F5-4CE83722FB2A}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BankOfDotNet.IdentitySvr", "BankOfDotNet.IdentitySvr\BankOfDotNet.IdentitySvr.csproj", "{43D83283-155A-40B8-B8E9-6A1A54B43874}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "BankOfDotNet.IdentitySvr", "BankOfDotNet.IdentitySvr\BankOfDotNet.IdentitySvr.csproj", "{43D83283-155A-40B8-B8E9-6A1A54B43874}"
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "BankOfDotNet.ConsoleClient", "BankOfDotNet.ConsoleClient\BankOfDotNet.ConsoleClient.csproj", "{95CCADFB-5654-4452-AC9F-4BF64D34D647}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BankOfDotNet.MvcClient", "BankOfDotNet.MvcClient\BankOfDotNet.MvcClient.csproj", "{E3A184A6-27D5-4B60-9E80-352F3342C410}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -27,6 +29,10 @@ Global
 		{95CCADFB-5654-4452-AC9F-4BF64D34D647}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{95CCADFB-5654-4452-AC9F-4BF64D34D647}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{95CCADFB-5654-4452-AC9F-4BF64D34D647}.Release|Any CPU.Build.0 = Release|Any CPU
+		{E3A184A6-27D5-4B60-9E80-352F3342C410}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{E3A184A6-27D5-4B60-9E80-352F3342C410}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{E3A184A6-27D5-4B60-9E80-352F3342C410}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{E3A184A6-27D5-4B60-9E80-352F3342C410}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
